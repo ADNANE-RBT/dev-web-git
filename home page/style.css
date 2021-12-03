@@ -1,0 +1,26 @@
+#vol3-cards{
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(20, 148, 187);
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 800px;
+} /* important above*/
+
+
+/*background video*/
+#video-background{
+ 
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+ 
+    
+  }
+  .dropdown:hover .dropdown-menu{
+      display: block;
+      margin-top: 0;
+
+  }

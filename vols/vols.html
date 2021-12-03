@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORTH TRAVEL AGENCY HOTELS</title>
+    <script src="/vols/vols.js"></script>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+  
+      <link rel="stylesheet" href="java.js" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+      ></script>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        rel="stylesheet"
+      />
+</head>
+<body >
+      <div class="container">
+        
+            <div class="row bg-primary text-light">
+                <div class="col-md-3 text-center mt-2" id="modifier-content">Je Recherche Un Vol :</div>
+                <div class="col-md-3">
+                 
+                    <select style="width: 285px" class="form-select bg-primary text-light mx-auto" aria-label="Default select example" id="asr">
+                      <option class="bg-white text-dark" value="Allez-retour" selected>Aller-Retour</option>
+                      <option class="bg-white text-dark" value="Allez-simple">Aller Simple</option>
+                      
+                    </select>
+                  
+                </div>
+                <div class="col-md-3">
+                  
+                    <select style="width: 280px" class="form-select bg-primary text-light mx-auto" aria-label="Default select example" id="vclasse">
+                      <option class="bg-white text-dark " value="0" selected>Tous Les Classes</option>
+                      <option class="bg-white text-dark" value="Economique">Economique</option>
+                      <option class="bg-white text-dark" value="Business">Business</option>
+                      <option class="bg-white text-dark" value="Premium">Premium</option>
+                      
+                    </select>
+                  
+        
+                <div class="col-md-3"></div>
+              </div>
+              </div>
+              <div class="row create">
+                <div   class="col-md-3 bg-light py-3 mx-auto">
+                  Ville De Départ
+                  <div class="mt-2">
+                    <select class="form-control" name="local" id="local">
+                        <option value="0" selected>De</option>
+                        <option value="OUJDA (Maroc)">OUJDA (Maroc)</option>
+                        <option value="RABAT (Maroc)">RABAT (Maroc)</option>
+                        <option value="CASABLANCA (Maroc)">CASABLANCA (Maroc)</option>
+                        <option value="TANGER (Maroc)">TANGER (Maroc)</option>
+                        <option value="NAPLES (Italy)">NAPLES (Italy)</option>
+                        <option value="ROME (Italy)">ROME (Italy)</option>
+                        <option value="MEKKA (Saudi Arabya)">MEKKA (Saudi Arabya)</option>
+                        <option value="RIYADE (Saudi Arabya)">RIYADE (Saudi Arabya)</option>
+                        <option value="BARCELONE (Espagne)">OBARCELONE (Espagne)</option>
+                        <option value="MADRID (Espagne)">MADRID (Espagne)</option>
+                        <option value="GRANADE (Espagne)">GRANADE (Espagne)</option>
+                        <option value="PARIS (France)">PARIS (France)</option>
+                        <option value="MARSEILLE (France)">MARSEILLE (France)</option>
+                     </select>
+                  </div>
+                </div>
+                <div  class="col-md-3 bg-light py-3 mx-auto">
+                  Destination
+                  <div class="mt-2">
+                    <select class="form-control" name="destination" id="destination">
+                        <option value="0" selected>Vers</option>
+                        <option value="OUJDA (Maroc)">OUJDA (Maroc)</option>
+                        <option value="RABAT (Maroc)">RABAT (Maroc)</option>
+                        <option value="CASABLANCA (Maroc)">CASABLANCA (Maroc)</option>
+                        <option value="TANGER (Maroc)">TANGER (Maroc)</option>
+                        <option value="NAPLES (Italy)">NAPLES (Italy)</option>
+                        <option value="ROME (Italy)">ROME (Italy)</option>
+                        <option value="MEKKA (Saudi Arabya)">MEKKA (Saudi Arabya)</option>
+                        <option value="RIYADE (Saudi Arabya)">RIYADE (Saudi Arabya)</option>
+                        <option value="BARCELONE (Espagne)">OBARCELONE (Espagne)</option>
+                        <option value="MADRID (Espagne)">MADRID (Espagne)</option>
+                        <option value="GRANADE (Espagne)<">GRANADE (Espagne)<</option>
+                        <option value="PARIS (France)">PARIS (France)</option>
+                        <option value="MARSEILLE (France)">MARSEILLE (France)</option>
+                     </select>
+                  </div>
+                </div>
+                <div class="col-md-2 bg-light py-3">
+                  Vos Dates
+                  <div class="mt-2">
+                    <input type="text" class="form-control text-primary" name="daterange" id="date"/>
+                  </div>
+                </div>
+                <div class="col-md-2 bg-light py-3">
+                  Nombre De Personnes
+                  <div class="">
+                    <a
+                      id="example"
+                      onclick="TestsFunction()"
+                      tabindex="0"
+                      class="btn btn-lg btn-light mt-3 pb-2"
+                      role="button"
+                      data-bs-container="body"
+                      data-bs-toggle="popover"
+                      data-html="true"
+                      title="Default: Html inside popover"
+                      data-bs-content="And here's some amazing content. It's very engaging. Right? This is default, but Can be empty"
+                    >
+                    <i class="bi bi-person"></i>
+                    <i class="bi bi-caret-down-fill"></i>
+                    </a>
+                  </div>
+                  <div id="popover-content" style="display: none">
+                    <div class="input-group">
+                      Adulte<input type="number" value="1" min="0" max="100" step="1" id="adulte"/>
+                      <hr />
+                      <hr />
+                      <hr />
+                      Enfant<input type="number" value="1" min="0" max="100" step="1" id="enfant" />
+                      <hr />
+                      BeBe<input type="number" value="1" min="0" max="100" step="1" id="bebe"/>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-2 btn-danger  ajouter py-1 " id="btn" onclick="voyage()">
+                  <div class="my-3 text-center h5" id='ajouterbtn'>Ajouter</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark bg-dark text-light">
+              <tr>
+                <th class="col-1" >N°ticket</th>
+                <th class="col-2"  >Allez-retour - Allez-simple</th>
+                <th class="col-1" >Classe</th>
+                <th class="col-2" >Depart</th>
+                <th class="col-2">Destination</th>
+                <th class="col-2" >Date depart - Date d'arriver</th>
+                <th class="col-2" >Voyageurs</th>
+              </tr>
+            </thead>
+            <tbody  id='table'>
+            </tbody>
+            </div>
+              <div class="modifiersupprimer" id="modifiersupprimer">
+                    <input type="text" placeholder="N°ticket" id="ticket">
+                    <button onclick="supprimer()" id="supprimer">Supprimer</button>
+                    <button onclick="modifier()" id="modifier">Modifier</button>
+                </div>
+
+      <script>
+        $(function () {
+          $('input[name="daterange"]').daterangepicker(
+            {
+              opens: "left",
+            },
+            function (start, end, label) {
+              console.log(
+                "A new date selection was made: " +
+                  start.format("YY-MM-DD") +
+                  " to " +
+                  end.format("YY-MM-DD")
+              );
+            }
+          );
+        });
+      </script>
+      <script>
+        var popoverTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl);
+        });
+      </script>
+      <script src=" https://cdn.jsdelivr.net/npm/bootstrap-input-spinner@3.1.7/src/bootstrap-input-spinner.min.js"></script>
+      <script>
+        $("input[type='number']").inputSpinner();
+      </script>
+      <script>
+        $(function () {
+          var options = {
+            html: true,
+            content: $("#popover-content"),
+ 
+          };
+          var exampleEl = document.getElementById("example");
+          var popover = new bootstrap.Popover(exampleEl, options);
+        });
+        function TestsFunction() {
+        var T = document.getElementById("popover-content");
+         if (T.style.display == "none"){
+         T.style.display ="";}
+         else { T.style.display="none"}// <-- Set it to block
+      }
+      </script>
+          <style>
+            .container {
+      position: relative;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+    
+    
+    .centered {
+      position: absolute;
+      top: 55%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+    }
+    .row {
+      display: flex;
+    }
+    
+    .row.create > div {
+      flex: 1;
+    
+      border: 1px solid grey;
+    }
+    .container {
+      padding: 20px;
+    }
+    
+    #btn {
+        margin: auto;
+        width: 100%;
+    }
+
+    .modifiersupprimer{
+        margin: 20px;
+        bottom: 0;
+    }
+        </style>
+ 
+</body>
+</html>

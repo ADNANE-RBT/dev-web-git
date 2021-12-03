@@ -1,0 +1,197 @@
+/*.reservation video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+}*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  
+.centered {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+#reservations{
+    background-color:rgb(26, 17, 3);
+    height: 700px;
+    width: 80%;
+   /* z-index: 2;*/
+    position: relative;
+    margin: auto;
+    padding: 0;
+    opacity: 0.8;
+    overflow-y: scroll;
+    
+}
+
+#reservations img{
+    height: 50px;
+    width: 50px;
+    border: black;
+    border-radius: 2px;
+    margin: auto;
+}
+
+#reservations h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#reservations input {
+    display: inline-flex;
+   
+
+}
+
+#username{
+    width: 400px;
+    height: 40px;
+    margin-left: 25%;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: oldlace 1px solid;
+
+
+
+ 
+}
+
+#login{
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+ 
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+   background-color: orange;
+    color: rgb(255, 255, 255);
+    border: none;}
+
+
+.disponible{
+    height: 200px;
+    width: 80%;
+    border: dotted 2px white;
+    margin-top: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.disponible h4{
+    float: right;
+}
+
+
+#local,#destination {
+width: 40%;
+background: transparent;
+height: 40px;
+border: none;
+border-bottom: yellow solid 2px;
+color: white;
+font-size: 20px;
+margin: auto;
+margin-bottom: 20px;
+}
+
+#reservations button{
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    background-color: orange;
+    width: 20%;
+    font-size: 15px;
+}
+
+#reservations button:hover{
+
+    color:rgb(255, 255, 255);
+    background:transparent;
+
+}
+
+
+.account {
+    border: double 1px white;
+    width:80;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+
+
+.vol{
+    background-color: yellow;
+    height: 180px;
+    width:80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    padding: 40px;
+}
+
+.vol button{
+    border:none;
+    color:red;
+    margin-left: 10px;
+    float: right;
+    height: 30px;
+    padding: 5px;
+}
+
+.ticket{
+    border: 1px black dotted; height: 540px; width: 100%; margin: auto; border-radius: 20px; background-color: red;
+}
+
+.header_ticket{
+    height: 50px; width: 100%;background-color: rgb(255, 0, 0); border-radius: 20px;display: flex;align-items: center;
+}
+
+.aside_ticket{
+    height:410px;background-color: blanchedalmond; padding-top: 5px; padding-left: 200px;
+}
+
+.footer_ticket{
+    height: 50px; width: 100%;background-color: rgb(255, 0, 0); border-radius: 20px;
+}
+.header_ticket p{font-size:20px;margin-top: 8px;}
+
+.header_ticket img{height: 30px}
+.header_ticket h2{text-align: center; font-size: 20px;}
+.header_ticket h3{margin-left: 50%;}
+
+.aside_ticket p {
+    margin-left: 200px;
+    
+}
+
+.footer_ticket p {
+    text-align: center;color: white;font-size: 20px;
+}
+
+
+#tickets {
+   height: auto;
+
+}
