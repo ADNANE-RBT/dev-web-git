@@ -1,13 +1,4 @@
-/*.reservation video {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    top: 0;
-    overflow: hidden;
 
-}*/
 .container {
     position: relative;
     text-align: center;
@@ -22,18 +13,7 @@
     transform: translate(-50%, -50%);
   }
 
-#reservations{
-    background-color:rgb(26, 17, 3);
-    height: 700px;
-    width: 80%;
-   /* z-index: 2;*/
-    position: relative;
-    margin: auto;
-    padding: 0;
-    opacity: 0.8;
-    overflow-y: scroll;
-    
-}
+
 
 #reservations img{
     height: 50px;

@@ -7,6 +7,20 @@
 } /* important above*/
 
 
+.scroll4::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+  .scroll4::-webkit-scrollbar-thumb {
+    background: #303235;
+    border-radius: 20px;
+  }
+  
+  .scroll4::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 20px;
+  }
+
 /*background video*/
 #video-background{
  
@@ -15,10 +29,10 @@
     min-width: 100%; 
     min-height: 100%;
     width: auto; 
-    height: auto;
+    height: auto;}
  
     
-  }
+
   .dropdown:hover .dropdown-menu{
       display: block;
       margin-top: 0;

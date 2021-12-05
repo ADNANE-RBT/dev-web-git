@@ -27,25 +27,7 @@ h1 {
   font-family: Montserrat, sans-serif;
   text-align: left;
 }
-/*div form {
-  position: absolute;
-  top: 50%;
-  left:10%;
-  width: 15%;
-  font-size: 20px;
-  text-align: left;
-  display: inline-block !important;
-}
-form input {
-  display: inline-block;
-  margin-right: 10px;
 
-}
-form button {
-  display: inline-block;
-  
-  
-}*/
 .height {
   height: 100vh;
   

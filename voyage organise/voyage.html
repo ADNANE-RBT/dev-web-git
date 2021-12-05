@@ -2,133 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   
-    <title>NORTH TRAVEL AGENCY Hajj</title>
-    <!-- on a utiliser un style interrn en raison d'evite la creation de plusieurs fishiers css...-->
+    <title>NORTH TRAVEL AGENCY</title>
     <style>
-        .container {
-  position: relative;
-  text-align: center;
-  color: white;
+     
+  body {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
+#video-background {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: 100%; 
+  height: 100%;
+  z-index: -100;
+}
 
-.centered {
+h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 1%;
+  left:5%;
+  width: 94%;
+  font-size: 36px;
+  letter-spacing: 3px;
+  
+  font-family: Montserrat, sans-serif;
+  text-align: left;
 }
 
-
+.height {
+  height: 40vh;
+  
+}
 
     </style>
 </head>
-<body >
-    <div class="container-fluid">
-        <video src="/images/hotelsvideo.mp4" style="width: 100%;" autoplay loop muted></video>
-        
-        <div class="centered ">
-            <div class="container text-white">
-                <div class="row bg-dark border border-3 border-primary text-center d-flex justify-content-center">
-                    <div class="row m-3"> <p>De: </p> </div>
-                    <div class="row mb-3"> <select class="form-control " name="local" id="local">
-                        <option value="0" selected>De</option>
-                        <option value="OUJDA (Maroc)">OUJDA (Maroc)</option>
-                        <option value="RABAT (Maroc)">RABAT (Maroc)</option>
-                        <option value="CASABLANCA (Maroc)">CASABLANCA (Maroc)</option>
-                        <option value="TANGER (Maroc)">TANGER (Maroc)</option>
-                        <option value="NAPLES (Italy)">NAPLES (Italy)</option>
-                        <option value="ROME (Italy)">ROME (Italy)</option>
-                        <option value="MEKKA (Saudi Arabya)">MEKKA (Saudi Arabya)</option>
-                        <option value="RIYADE (Saudi Arabya)">RIYADE (Saudi Arabya)</option>
-                        <option value="BARCELONE (Espagne)">OBARCELONE (Espagne)</option>
-                        <option value="MADRID (Espagne)">MADRID (Espagne)</option>
-                        <option value="GRANADE (Espagne)">GRANADE (Espagne)</option>
-                        <option value="PARIS (France)">PARIS (France)</option>
-                        <option value="MARSEILLE (France)">MARSEILLE (France)</option>
-                     </select>
-                    </div>
 
-                    <div class="row bg-dark border border-3 border-primary text-center d-flex justify-content-center">
-                        <div class="row m-3"> <p>Destination: </p> </div>
-                        <div class="row mb-3"> <select class="form-control " name="local" id="local">
-                            <option value="0" selected>De</option>
-                            <option value="OUJDA (Maroc)">OUJDA (Maroc)</option>
-                            <option value="RABAT (Maroc)">RABAT (Maroc)</option>
-                            <option value="CASABLANCA (Maroc)">CASABLANCA (Maroc)</option>
-                            <option value="TANGER (Maroc)">TANGER (Maroc)</option>
-                            <option value="NAPLES (Italy)">NAPLES (Italy)</option>
-                            <option value="ROME (Italy)">ROME (Italy)</option>
-                            <option value="MEKKA (Saudi Arabya)">MEKKA (Saudi Arabya)</option>
-                            <option value="RIYADE (Saudi Arabya)">RIYADE (Saudi Arabya)</option>
-                            <option value="BARCELONE (Espagne)">OBARCELONE (Espagne)</option>
-                            <option value="MADRID (Espagne)">MADRID (Espagne)</option>
-                            <option value="GRANADE (Espagne)">GRANADE (Espagne)</option>
-                            <option value="PARIS (France)">PARIS (France)</option>
-                            <option value="MARSEILLE (France)">MARSEILLE (France)</option>
-                         </select>
-                        </div>
-              
-                     <div class="row bg-dark border border-3 border-primary text-center d-flex justify-content-center">
-                            <div class="row m-3">Nombre De Personnes</div> 
-                            <div class="row mb-3">
-                              <a
-                                id="example"
-                                onclick="TestsFunction()"
-                                tabindex="0"
-                                class="btn btn-lg btn-light mt-3 pb-2"
-                                role="button"
-                                data-bs-container="body"
-                                data-bs-toggle="popover"
-                                data-html="true"
-                                title="Default: Html inside popover"
-                                data-bs-content="And here's some amazing content. It's very engaging. Right? This is default, but Can be empty"
-                              >
-                              <i class="bi bi-person"></i>
-                              <i class="bi bi-caret-down-fill"></i>
-                              </a>
-                            </div>
-                        </div>
+
+
+
+
+<body class="scroll4 bg-dark text-white">
+ <video autoplay loop id="video-background" muted>
+    <source src="/images/hotelsvideo.mp4" type="video/webm">
+  </video>
+
+  <div class="container">
+    <div class="row height d-flex justify-content-center align-items-center ">
       
-                
-                <div class="row  bg-dark border border-3 border-primary text-center d-flex justify-content-center">
-                    <div class="row m-3"> <p> Date d'arrivee - Date de depart</p> </div>
-                    <div class="row mb-3 mt-2 d-flex justify-content-center">
-                         <input type="text" class="form-control text-primary" name="daterange" id="date"/></div>
-      
-                </div>
-
-               
-
-
-
-
-                <div class="row bg-dark mb-3 btn-danger  ajouter py-1 " id="btn" onclick="voyage()">
-                    <div class=" my-3 text-center h5 " id='ajouterbtn'>Ajouter</div>
-                  </div>
-           
-           
-          
-      </div>
-        </div>
     </div>
+
+  </div>
   
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.1.3/jquery.min.js"></script>
-      <script src="/home page/mainjava.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <script >
-          function TestsFunction() {
-        var T = document.getElementById("popover-content");
-         if (T.style.display == "none"){
-         T.style.display ="";}
-         else { T.style.display="none"}// <-- Set it to block
-      }
-      </script>
+ <div class="container marketing ">
+  
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette  opacity-90 rounded rounded-15 text-dark">
+   
+      <h2 class="featurette-heading fw-bolder">we're sorry dear customer!</h2>
+      <p class="lead fw-bold">there are no organised travels at the moment, we will notify you once there are any.</p>
+   
+  </div>
+  <hr class="featurette-divider">
+  
+
+
+
+</div>
 </body>
 </html>
